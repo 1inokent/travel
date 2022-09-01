@@ -1,0 +1,70 @@
+
+
+body {
+	position: relative;
+   background: #ffffff;
+	margin: 0;
+	width: 100%;
+}
+
+.header {
+	display: flex;
+   align-items: center;
+   height: 90px;
+	padding: 0px 120px;
+	justify-content: space-between;
+
+	background: rgba(242, 120, 92, 0.7);
+   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.loginbutton {
+	color: #ffffff;
+	font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 0px;
+   gap: 10px;
+	border-style:none;
+
+   width: 103px;
+   height: 41px;
+   right: 120px;
+   top: 25px;
+
+   background: #0D606F;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+   border-radius: 10px;
+}
+
+.navul {
+   width: 527px;
+   height: 21px;
+   left: 494px;
+   top: 22px;
+
+	display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   gap: 42px;
+
+	list-style-type: none;
+	color: #ffffff;
+	font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+}
+
+.headerlogo {
+	
+
+}
