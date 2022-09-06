@@ -1,21 +1,34 @@
-
-
 body {
-	position: relative;
-   background: #ffffff;
-	margin: 0;
+   margin: 0;
+}
+
+.hero {
+   box-sizing: content-box;
+   height: 765px;
 	width: 100%;
+	margin: 0;
 }
 
 .header {
+   right: 0;
+   left: 0;
+   top: 0;
+   top: 0;
+   position: fixed;
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   z-index: 111;
 	display: flex;
    align-items: center;
    height: 90px;
 	padding: 0px 120px;
-	justify-content: space-between;
+	justify-content: space-evenly;
 
-	background: rgba(242, 120, 92, 0.7);
+	background-color:rgba(242, 120, 92, 0.7);
    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+.headerlogo {
+   font-family: 'Magra';
 }
 
 .loginbutton {
@@ -37,7 +50,6 @@ body {
    width: 103px;
    height: 41px;
    right: 120px;
-   top: 25px;
 
    background: #0D606F;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -64,7 +76,83 @@ body {
    line-height: 21px;
 }
 
-.headerlogo {
-	
-
+.pageone {
+   width: 100%;
+   height: 765px
+   ;
 }
+
+.container {
+   width: 100%;
+   height: 765px;
+   background: no-repeat center/100% url(./assets/background.jpg); 
+}
+
+.container__titles {
+   width: 860px;
+   position: absolute;
+   top: 120px;
+   left: 120px;
+
+   color: #ffffff;
+}
+
+.title {
+   font-family: 'Aleo';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 80px;
+   line-height: 96px;
+   color: #ffffff;
+}
+
+.title__p {
+   font-family: 'Aleo';
+   font-style: italic;
+   color: #ffffff;
+}
+
+.start-planning{
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
+   width: 860px;
+   height: 95px;
+}
+
+.start-planning__input {
+   width: 860px;
+   height: 95px;
+   border-radius: 10px;
+   background: rgba(255, 255, 255, 0.7);
+   border-style: none;
+   padding: 0;
+
+   font-family: 'Aleo';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+   color: #F2785C;
+}
+
+.start-planning__button {
+   position: absolute;
+   margin: 20px;
+   width: 228px;
+   height: 59px;
+
+   justify-content: center;
+   align-items: center;
+   background: #0D606F;
+   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+   border-radius: 10px;
+   border-style: none;
+
+   color: #ffffff;
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 32px;
+}  
