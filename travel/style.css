@@ -84,7 +84,8 @@ body {
 .container {
    width: 100%;
    height: 765px;
-   background: no-repeat center/100% url(./assets/background.jpg); 
+   background: no-repeat url(./assets/background.jpg); 
+   background-size: cover;
 }
 
 .container__titles {
@@ -187,10 +188,6 @@ body {
    justify-content: space-between;
 }
 
-.wrapper {
-   
-}
-
 .destinations-title {
    font-family: 'Red Hat Text';
    font-style: normal;
@@ -206,22 +203,137 @@ body {
 .image-slider {
    padding: 30px 0 70px 0;
 }
-.image-slider__wrapper {
-}
-.image-slider__slide {
-}
+
 .image-slider__image {
    text-align: center;
+}
+.image-slider__image img {
+   width: 100%;
 }
 .image-slider__image {
    max-width: 100%;
 }
 
-
-.destinations__button-more  {
+.image-slider .swiper-pagination {
+   bottom: 0;
+}
+.swiper-pagination {
    position: relative;
-   left: 43%;
-   width: 228px;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+   bottom: 60px;
+}
+.swiper-pagination-bullet {
+   width: 20px;
+   height: 20px;
+   line-height: 20px;
+   font-size: 14px;
+   background-color:#F2785C;
+}
+
+.destinations__button {
+   display: flex;
+   justify-content: center;
+}
+
+.destinations__button-more {
+   padding: 0 31px;
+   height: 60px;
+   bottom: 37px;
+
+
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 32px;
+   color: #FFFFFF;
+
+   border-style: none;
+   background: #0D606F;
+   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+   border-radius: 10px;
+}
+
+.travel-container {
+   width: 100%;
+}
+
+.travel-stories-background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: -60px;
+   background-image: url('./assets/Rectangle 33.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index: -1;
+}
+
+.tarvel-storis {
+   position: relative;
+}
+
+.travel-story__container {
+   position: relative;
+   background-color: rgba(255, 255, 255, 0.7);
+   display: flex;
+   flex-direction: column;
+}
+
+.travel-story {
+   margin: 30px 0 30px 130px;
+   display: flex;
+}
+
+.travel-story img {
+   margin-right: 30px;
+   width: 400px;
+   height: 100%;
+   background: url(robin-noguier-sydwCr54rf0-unsplash.jpg);
+   filter: drop-shadow(0px 4px 4px #0D606F);
+   border-radius: 16px;
+}
+
+.story__description {
+   width: 760px;
+   height: 184px;
+
+   font-family: 'Aleo';
+   font-style: normal;
+   color: #0D606F;
+}
+.story__title {
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 42px;
+}
+.story__p {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+}
+
+.travel-title {
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 40px;
+   line-height: 53px;
+   color: #F2785C;
+   display: flex;
+   justify-content: center;
+}
+
+.travel-button-wrapper {
+   display: flex;
+   justify-content: center;
+}
+
+.travel__button-more {
+   margin: 30px;
+   padding: 0 31px;
    height: 60px;
 
    font-family: 'Red Hat Text';
@@ -231,8 +343,34 @@ body {
    line-height: 32px;
    color: #FFFFFF;
 
+   border-style: none;
    background: #0D606F;
    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
    border-radius: 10px;
 }
 
+.footer {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 31%;
+   justify-content: flex-end;
+   font-family: 'Red Hat Text';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 21px;
+   color: #FFFFFF;
+   margin-left: -120px;
+   margin-top: 15px;
+}
+
+.link-read-more {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   font-family: 'Aleo';
+   font-style: normal;
+   color: #0D606F;
+   font-weight: bold;
+}
